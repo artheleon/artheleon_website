@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------------------------------------------------
-Project:	    Selfer
+Project:	    Artheleon Gaming Site
 Version:        1.0.0
 
 Default Color   #f26c4f;
@@ -2456,6 +2456,9 @@ E. Template Specific Elements
     display: flex;
 }
 
+.games{
+    margin-bottom:50px;
+}
 /*-------------------------------------------
   -- SVG Shapes
 -------------------------------------------*/
