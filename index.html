@@ -146,6 +146,7 @@
                                     <div class="ts-item-body">
                                         <h4>Stream</h4>
                                         <p class="mb-0">
+                                            <div id="twitch-embed"></div>
                                             I am streaming on different platforms like Twitch, Youtube but I stream mainly on Facebook.
                                         </p>
                                     </div>
@@ -167,8 +168,12 @@
                                     <!--end ts-item-header-->
                                     <div class="ts-item-body">
                                         <h4>Tournaments</h4>
+                                        
                                         <p class="mb-0">
-                                            Coming soon...
+                                            <a href="https://battlefy.com/artheleon-gaming/artheleon-gaming-tournament-valentine-edition-2021/601ebf3ce9712c7839e5c2a1/admin?selectedItem=embeds">
+                                                Artheleon Gaming Tournament Valentine Edition 2021
+                                            </a>
+                                            
                                         </p>
                                     </div>
                                     <!--end ts-item-body-->
@@ -521,7 +526,8 @@
         <script>(function () { var script = document.createElement('script'); script.src = 'https://app.activechat.ai/script/63987681-ea21-4bba-8ea0-f60a16f46226'; script.id = 'ACCW_EMBED'; document.getElementsByTagName('head')[0].appendChild(script); })();</script>
     </div>
     <!--end page-->
-
+    
+    
 	<script src="assets/js/custom.hero.js"></script>
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
@@ -535,6 +541,28 @@
 	<script src="assets/js/odometer.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+        var options = {
+          width: 160 ,
+          height: 90,
+          channel: "artheleongaming",
+          video: "909355306",
+          // only needed if your site is also embedded on embed.example.com and othersite.example.com
+          parent: ["embed.example.com", "othersite.example.com"]
+        };
+        var player = new Twitch.Player("twitch-embed", options);
+        player.setVolume(0.5);
+      </script>
+    <!-- <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: 854,
+          height: 480,
+          channel: "artheleongaming",
+          // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+          parent: ["embed.example.com", "othersite.example.com"]
+        });
+      </script> -->
 
 </body>
 </html>
